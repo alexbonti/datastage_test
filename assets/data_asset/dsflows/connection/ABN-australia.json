@@ -1,0 +1,1524 @@
+{
+  "interaction_properties" : {
+    "source" : [ {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The maximum number of bytes to return. Use any of these suffixes; KB, MB, GB, or TB",
+      "displayGroup" : "limitsSource",
+      "label" : "Byte limit",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 20,
+      "multiline" : false,
+      "name" : "byte_limit",
+      "multichoice" : false,
+      "placeholder" : "100MB"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The format of date values, for example, yyyy-[m]m-[d]d",
+      "displayGroup" : "dataFormats",
+      "label" : "Date format",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 410,
+      "multiline" : false,
+      "name" : "date_format",
+      "multichoice" : false,
+      "placeholder" : "yyyy-mm-dd",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The format of decimal values, for example, #,###.##",
+      "displayGroup" : "dataFormats",
+      "label" : "Decimal format",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 380,
+      "multiline" : false,
+      "name" : "decimal_format",
+      "multichoice" : false,
+      "placeholder" : "#,###.##",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The character used to separate the integer part from the fractional part of a number. This property and decimal grouping separator property must be unique. If you encounter error related to them not being unique when only one of them was provided then please provide the missing one explicitly.",
+      "displayGroup" : "dataFormats",
+      "label" : "Decimal separator",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 390,
+      "multiline" : false,
+      "name" : "decimal_format_decimal_separator",
+      "multichoice" : false,
+      "placeholder" : ".",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The character used to group digits of similar significance. This property and decimal separator property must be unique. If you encounter error related to them not being unique when only one of them was provided then please provide the missing one explicitly.",
+      "displayGroup" : "dataFormats",
+      "label" : "Decimal grouping separator",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 400,
+      "multiline" : false,
+      "name" : "decimal_format_grouping_separator",
+      "multichoice" : false,
+      "placeholder" : ",",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Display the value labels",
+      "displayGroup" : "fileFormat",
+      "label" : "Display value labels",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 610,
+      "multiline" : false,
+      "name" : "display_value_labels",
+      "multichoice" : false,
+      "group" : "sav"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The appropriate character encoding for your data, for example, UTF-8",
+      "displayGroup" : "fileFormat",
+      "default_value" : "utf-8",
+      "label" : "Encoding",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 32,
+      "multiline" : false,
+      "name" : "encoding",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : true,
+      "description" : "Key to decrypt sav file",
+      "displayGroup" : "fileFormat",
+      "label" : "Encryption key",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 600,
+      "multiline" : false,
+      "name" : "encryption_key",
+      "multichoice" : false,
+      "group" : "sav"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Any character",
+        "value" : "<?>"
+      }, {
+        "label" : "Backslash",
+        "value" : "backslash"
+      }, {
+        "label" : "Double quotation mark",
+        "value" : "double_quote"
+      }, {
+        "label" : "None",
+        "value" : "none"
+      }, {
+        "label" : "Single quotation mark",
+        "value" : "single_quote"
+      } ],
+      "description" : "The character that's used to escape other characters, for example, a backslash. Escaping is a string technique that identifies characters as being part of a string value.",
+      "displayGroup" : "fileFormat",
+      "default_value" : "none",
+      "label" : "Escape character",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 360,
+      "multiline" : false,
+      "name" : "escape_character",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The custom character that is used to escape other characters.",
+      "displayGroup" : "fileFormat",
+      "label" : "Escape character value",
+      "type" : "string",
+      "required" : true,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 365,
+      "multiline" : false,
+      "name" : "escape_character_value",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Set values that have been defined as missing values to null",
+      "displayGroup" : "fileFormat",
+      "label" : "Exclude missing values",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 620,
+      "multiline" : false,
+      "name" : "exclude_missing_values",
+      "multichoice" : false,
+      "group" : "sav"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Any character",
+        "value" : "<?>"
+      }, {
+        "label" : "Colon",
+        "value" : "colon"
+      }, {
+        "label" : "Comma",
+        "value" : "comma"
+      }, {
+        "label" : "Tab",
+        "value" : "tab"
+      } ],
+      "description" : "The character that separates each value from the next value, for example, a comma",
+      "displayGroup" : "fileFormat",
+      "default_value" : "comma",
+      "label" : "Field delimiter",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 320,
+      "multiline" : false,
+      "name" : "field_delimiter",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The custom character that separates each value from the next value",
+      "displayGroup" : "fileFormat",
+      "label" : "Field delimiter value",
+      "type" : "string",
+      "required" : true,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 325,
+      "multiline" : false,
+      "name" : "field_delimiter_value",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Avro",
+        "value" : "avro"
+      }, {
+        "label" : "CSV",
+        "value" : "csv"
+      }, {
+        "label" : "Delimited",
+        "value" : "delimited"
+      }, {
+        "label" : "Excel",
+        "value" : "excel"
+      }, {
+        "label" : "JSON",
+        "value" : "json"
+      }, {
+        "label" : "ORC",
+        "value" : "orc"
+      }, {
+        "label" : "Parquet",
+        "value" : "parquet"
+      }, {
+        "label" : "SAS",
+        "value" : "sas"
+      }, {
+        "label" : "SAV",
+        "value" : "sav"
+      }, {
+        "label" : "SHP",
+        "value" : "shp"
+      }, {
+        "label" : "XML",
+        "value" : "xml"
+      } ],
+      "description" : "The format of the file",
+      "displayGroup" : "fileFormat",
+      "default_value" : "csv",
+      "label" : "File format",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 30,
+      "multiline" : false,
+      "name" : "file_format",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The name of the file to read",
+      "displayGroup" : "generalSource",
+      "label" : "File name",
+      "type" : "string",
+      "required" : true,
+      "tags" : [ "file" ],
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 100,
+      "multiline" : false,
+      "name" : "file_name",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Indicates at which row start reading",
+      "displayGroup" : "fileFormat",
+      "default_value" : "0",
+      "label" : "First line",
+      "type" : "integer",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 120,
+      "multiline" : false,
+      "name" : "first_line",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Indicates whether the row where reading starts is the header",
+      "displayGroup" : "fileFormat",
+      "default_value" : "false",
+      "label" : "First line is header",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 35,
+      "multiline" : false,
+      "name" : "first_line_header",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Generate unicode type columns. This property can be set/is applicable only when runtime column propagation is used",
+      "displayGroup" : "generalSource",
+      "default_value" : "false",
+      "label" : "Generate unicode type columns",
+      "type" : "boolean",
+      "supported_products" : [ "datastage_scapi" ],
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 0,
+      "multiline" : false,
+      "name" : "generate_unicode_columns",
+      "multichoice" : false
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Treat the data in all columns as VARCHARs",
+      "displayGroup" : "fileFormat",
+      "default_value" : "false",
+      "label" : "Infer as VARCHAR",
+      "type" : "boolean",
+      "supported_products" : [ "catalog", "cpd", "datarefinery", "ml", "studio" ],
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 60,
+      "multiline" : false,
+      "name" : "infer_as_varchar",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Treat empty values in string type columns as empty strings instead of null",
+      "displayGroup" : "fileFormat",
+      "default_value" : "false",
+      "label" : "Infer null as empty string",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 130,
+      "multiline" : false,
+      "name" : "infer_null_as_empty_string",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The number of records to process to obtain the structure of the data",
+      "displayGroup" : "fileFormat",
+      "default_value" : "1000",
+      "label" : "Infer record count",
+      "type" : "integer",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 50,
+      "multiline" : false,
+      "name" : "infer_record_count",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Obtain the schema from the file",
+      "displayGroup" : "fileFormat",
+      "default_value" : "false",
+      "label" : "Infer schema",
+      "type" : "boolean",
+      "supported_products" : [ "catalog", "cpd", "datarefinery", "ml", "studio" ],
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 40,
+      "multiline" : false,
+      "name" : "infer_schema",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Infer columns containing date and time data as date",
+      "displayGroup" : "fileFormat",
+      "default_value" : "true",
+      "label" : "Infer TIMESTAMP as DATE",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 630,
+      "multiline" : false,
+      "name" : "infer_timestamp_as_date",
+      "multichoice" : false,
+      "group" : "sav"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Column",
+        "value" : "column"
+      }, {
+        "label" : "Fail",
+        "value" : "fail"
+      }, {
+        "label" : "Row",
+        "value" : "row"
+      } ],
+      "description" : "How to handle values that are not valid: fail the job, null the column, or drop the row",
+      "displayGroup" : "fileFormat",
+      "default_value" : "fail",
+      "label" : "Invalid data handling",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 105,
+      "multiline" : false,
+      "name" : "invalid_data_handling",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : true,
+      "masked" : false,
+      "description" : "Deprecated. Use infer_record_count property. The number of JSON elements to process to obtain the structure of the data",
+      "displayGroup" : "fileFormat",
+      "label" : "Infer record count",
+      "type" : "integer",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 100,
+      "multiline" : false,
+      "name" : "json_infer_record_count",
+      "multichoice" : false,
+      "group" : "json"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The path that identifies the elements to retrieve from a JSON document, for example, $.book.publisher",
+      "displayGroup" : "fileFormat",
+      "label" : "JSON path",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 33,
+      "multiline" : false,
+      "name" : "json_path",
+      "multichoice" : false,
+      "group" : "json"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Set column names to the value of the column label",
+      "displayGroup" : "fileFormat",
+      "label" : "Labels as names",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 640,
+      "multiline" : false,
+      "name" : "labels_as_names",
+      "multichoice" : false,
+      "group" : "sav"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The value that represents null (a missing value) in the file, for example, NULL",
+      "displayGroup" : "dataFormats",
+      "label" : "Null value",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 450,
+      "multiline" : false,
+      "name" : "null_value",
+      "multichoice" : false,
+      "placeholder" : "NULL",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Each row in the Avro file would be exported as JSON to a string column",
+      "displayGroup" : "fileFormat",
+      "label" : "Output as JSON",
+      "type" : "boolean",
+      "supported_products" : [ "datastage_scapi" ],
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 1020,
+      "multiline" : false,
+      "name" : "output_avro_as_json",
+      "multichoice" : false,
+      "group" : "avro"
+    }, {
+      "hidden" : true,
+      "masked" : false,
+      "description" : "The prefix in each partition name",
+      "displayGroup" : "generalSource",
+      "default_value" : "part",
+      "label" : "Partition name prefix",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 130,
+      "multiline" : false,
+      "name" : "partition_name_prefix",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Double quotation mark",
+        "value" : "double_quote"
+      }, {
+        "label" : "None",
+        "value" : "none"
+      }, {
+        "label" : "Single quotation mark",
+        "value" : "single_quote"
+      } ],
+      "description" : "The character that's used to enclose string values, for example, a double quotation mark",
+      "displayGroup" : "fileFormat",
+      "default_value" : "none",
+      "label" : "Quote character",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 350,
+      "multiline" : false,
+      "name" : "quote_character",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The range of cells to retrieve from the Excel worksheet, for example, C1:F10",
+      "displayGroup" : "fileFormat",
+      "label" : "Cell range",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 34,
+      "multiline" : false,
+      "name" : "range",
+      "multichoice" : false,
+      "group" : "excel"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Read a single file",
+        "value" : "read_single"
+      }, {
+        "label" : "Read binary data",
+        "value" : "read_raw"
+      }, {
+        "label" : "Read multiple files using regex expression",
+        "value" : "read_multiple_regex"
+      }, {
+        "label" : "Read multiple files using wildcards",
+        "value" : "read_multiple_wildcard"
+      } ],
+      "description" : "The method for reading files",
+      "displayGroup" : "generalSource",
+      "default_value" : "read_single",
+      "label" : "Read mode",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 80,
+      "multiline" : false,
+      "name" : "read_mode",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Any new line",
+        "value" : "new_line"
+      }, {
+        "label" : "Carriage return",
+        "value" : "carriage_return"
+      }, {
+        "label" : "Carriage return & line feed",
+        "value" : "carriage_return_line_feed"
+      }, {
+        "label" : "Line feed",
+        "value" : "line_feed"
+      } ],
+      "description" : "The character or characters that separate one line from another, for example, CR/LF (Carriage Return/Line Feed)",
+      "displayGroup" : "fileFormat",
+      "default_value" : "new_line",
+      "label" : "Row delimiter",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 315,
+      "multiline" : false,
+      "name" : "row_delimiter",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The maximum number of rows to return",
+      "displayGroup" : "limitsSource",
+      "label" : "Row limit",
+      "type" : "integer",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 10,
+      "multiline" : false,
+      "name" : "row_limit",
+      "multichoice" : false,
+      "placeholder" : "1000"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Indicates the offset from the row where reading starts to treat as the start of the data",
+      "displayGroup" : "limitsSource",
+      "label" : "Row start",
+      "type" : "integer",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 15,
+      "multiline" : false,
+      "name" : "row_start",
+      "multichoice" : false
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The name of the Excel worksheet to read from",
+      "displayGroup" : "fileFormat",
+      "label" : "Worksheet name",
+      "type" : "string",
+      "required" : false,
+      "tags" : [ "worksheet" ],
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 33,
+      "multiline" : false,
+      "name" : "sheet_name",
+      "multichoice" : false,
+      "group" : "excel"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The format of time values, for example, HH:mm:ss[.f]",
+      "displayGroup" : "dataFormats",
+      "label" : "Time format",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 420,
+      "multiline" : false,
+      "name" : "time_format",
+      "multichoice" : false,
+      "placeholder" : "HH:mm:ss[.f]",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The format of timestamp values, for example, yyyy-MM-dd H:m:s",
+      "displayGroup" : "dataFormats",
+      "label" : "Timestamp format",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 430,
+      "multiline" : false,
+      "name" : "timestamp_format",
+      "multichoice" : false,
+      "placeholder" : "yyyy-MM-dd H:m:s",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Overrides the data types of specified columns in the file's inferred schema, for example, inferredType1:newType1;inferredType2:newType2",
+      "displayGroup" : "fileFormat",
+      "label" : "Type mapping",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 80,
+      "multiline" : false,
+      "name" : "type_mapping",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Format data using specified field formats",
+      "displayGroup" : "fileFormat",
+      "label" : "Use field formats",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 650,
+      "multiline" : false,
+      "name" : "use_field_formats",
+      "multichoice" : false,
+      "group" : "sav"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Format data using specified variable formats.",
+      "displayGroup" : "fileFormat",
+      "label" : "Use variable formats",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 800,
+      "multiline" : false,
+      "name" : "use_variable_formats",
+      "multichoice" : false,
+      "group" : "sas"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The path that identifies the root elements to retrieve from a XML document, for example, /book/publisher",
+      "displayGroup" : "fileFormat",
+      "label" : "XPath",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 33,
+      "multiline" : false,
+      "name" : "xml_path",
+      "multichoice" : false,
+      "group" : "xml"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The path that identifies the specified elements to retrieve from the root path of a XML document, for example, ../publisher",
+      "displayGroup" : "fileFormat",
+      "label" : "Fields XPath",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 34,
+      "multiline" : false,
+      "name" : "xml_path_fields",
+      "multichoice" : false,
+      "group" : "xml"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The schema that specified metadata information of elements, for example, data type, values, min, max",
+      "displayGroup" : "fileFormat",
+      "label" : "Schema of XML",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 920,
+      "multiline" : true,
+      "name" : "xml_schema",
+      "multichoice" : false,
+      "group" : "xml"
+    } ],
+    "target" : [ {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Bzip2",
+        "value" : "bzip2"
+      }, {
+        "label" : "Deflate",
+        "value" : "deflate"
+      }, {
+        "label" : "None",
+        "value" : "null"
+      }, {
+        "label" : "Snappy",
+        "value" : "snappy"
+      } ],
+      "description" : "The compression codec to use when writing",
+      "displayGroup" : "fileFormat",
+      "label" : "Compression codec",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 15,
+      "multiline" : false,
+      "name" : "codec_avro",
+      "multichoice" : false,
+      "placeholder" : "Choose a compression codec",
+      "group" : "avro"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "GZIP",
+        "value" : "gzip"
+      }, {
+        "label" : "None",
+        "value" : "uncompressed"
+      } ],
+      "description" : "The compression codec to use when writing",
+      "displayGroup" : "fileFormat",
+      "label" : "Compression codec",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 18,
+      "multiline" : false,
+      "name" : "codec_csv",
+      "multichoice" : false,
+      "placeholder" : "Choose a compression codec",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "GZIP",
+        "value" : "gzip"
+      }, {
+        "label" : "None",
+        "value" : "uncompressed"
+      } ],
+      "description" : "The compression codec to use when writing",
+      "displayGroup" : "fileFormat",
+      "label" : "Compression codec",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 18,
+      "multiline" : false,
+      "name" : "codec_delimited",
+      "multichoice" : false,
+      "placeholder" : "Choose a compression codec",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "LZ4",
+        "value" : "lz4"
+      }, {
+        "label" : "LZO",
+        "value" : "lzo"
+      }, {
+        "label" : "None",
+        "value" : "none"
+      }, {
+        "label" : "Snappy",
+        "value" : "snappy"
+      }, {
+        "label" : "ZLib",
+        "value" : "zlib"
+      } ],
+      "description" : "The compression codec to use when writing",
+      "displayGroup" : "fileFormat",
+      "label" : "Compression codec",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 500,
+      "multiline" : false,
+      "name" : "codec_orc",
+      "multichoice" : false,
+      "placeholder" : "Choose a compression codec",
+      "group" : "orc"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "GZip",
+        "value" : "gzip"
+      }, {
+        "label" : "None",
+        "value" : "uncompressed"
+      }, {
+        "label" : "Snappy",
+        "value" : "snappy"
+      } ],
+      "description" : "The compression codec to use when writing",
+      "displayGroup" : "fileFormat",
+      "label" : "Compression codec",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 18,
+      "multiline" : false,
+      "name" : "codec_parquet",
+      "multichoice" : false,
+      "placeholder" : "Choose a compression codec",
+      "group" : "parquet"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The format of date values, for example, yyyy-[m]m-[d]d",
+      "displayGroup" : "dataFormats",
+      "label" : "Date format",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 410,
+      "multiline" : false,
+      "name" : "date_format",
+      "multichoice" : false,
+      "placeholder" : "yyyy-mm-dd",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The format of decimal values, for example, #,###.##",
+      "displayGroup" : "dataFormats",
+      "label" : "Decimal format",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 380,
+      "multiline" : false,
+      "name" : "decimal_format",
+      "multichoice" : false,
+      "placeholder" : "#,###.##",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The character used to separate the integer part from the fractional part of a number. This property and decimal grouping separator property must be unique. If you encounter error related to them not being unique when only one of them was provided then please provide the missing one explicitly.",
+      "displayGroup" : "dataFormats",
+      "label" : "Decimal separator",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 390,
+      "multiline" : false,
+      "name" : "decimal_format_decimal_separator",
+      "multichoice" : false,
+      "placeholder" : ".",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The character used to group digits of similar significance. This property and decimal separator property must be unique. If you encounter error related to them not being unique when only one of them was provided then please provide the missing one explicitly.",
+      "displayGroup" : "dataFormats",
+      "label" : "Decimal grouping separator",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 400,
+      "multiline" : false,
+      "name" : "decimal_format_grouping_separator",
+      "multichoice" : false,
+      "placeholder" : ",",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The appropriate character encoding for your data, for example, UTF-8",
+      "displayGroup" : "fileFormat",
+      "default_value" : "utf-8",
+      "label" : "Encoding",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 32,
+      "multiline" : false,
+      "name" : "encoding",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : true,
+      "description" : "Key to decrypt sav file",
+      "displayGroup" : "fileFormat",
+      "label" : "Encryption key",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 600,
+      "multiline" : false,
+      "name" : "encryption_key",
+      "multichoice" : false,
+      "group" : "sav"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Any character",
+        "value" : "<?>"
+      }, {
+        "label" : "Backslash",
+        "value" : "backslash"
+      }, {
+        "label" : "Double quotation mark",
+        "value" : "double_quote"
+      }, {
+        "label" : "None",
+        "value" : "none"
+      }, {
+        "label" : "Single quotation mark",
+        "value" : "single_quote"
+      } ],
+      "description" : "The character that's used to escape other characters, for example, a backslash. Escaping is a string technique that identifies characters as being part of a string value.",
+      "displayGroup" : "fileFormat",
+      "default_value" : "none",
+      "label" : "Escape character",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 360,
+      "multiline" : false,
+      "name" : "escape_character",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The custom character that is used to escape other characters.",
+      "displayGroup" : "fileFormat",
+      "label" : "Escape character value",
+      "type" : "string",
+      "required" : true,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 365,
+      "multiline" : false,
+      "name" : "escape_character_value",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Any character",
+        "value" : "<?>"
+      }, {
+        "label" : "Colon",
+        "value" : "colon"
+      }, {
+        "label" : "Comma",
+        "value" : "comma"
+      }, {
+        "label" : "Tab",
+        "value" : "tab"
+      } ],
+      "description" : "The character that separates each value from the next value, for example, a comma",
+      "displayGroup" : "fileFormat",
+      "default_value" : "comma",
+      "label" : "Field delimiter",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 320,
+      "multiline" : false,
+      "name" : "field_delimiter",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The custom character that separates each value from the next value",
+      "displayGroup" : "fileFormat",
+      "label" : "Field delimiter value",
+      "type" : "string",
+      "required" : true,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 325,
+      "multiline" : false,
+      "name" : "field_delimiter_value",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Avro",
+        "value" : "avro"
+      }, {
+        "label" : "CSV",
+        "value" : "csv"
+      }, {
+        "label" : "Delimited",
+        "value" : "delimited"
+      }, {
+        "label" : "Excel",
+        "value" : "excel"
+      }, {
+        "label" : "JSON",
+        "value" : "json"
+      }, {
+        "label" : "ORC",
+        "value" : "orc"
+      }, {
+        "label" : "Parquet",
+        "value" : "parquet"
+      }, {
+        "label" : "SAV",
+        "value" : "sav"
+      }, {
+        "label" : "XML",
+        "value" : "xml"
+      } ],
+      "description" : "The format of the file to write to",
+      "displayGroup" : "fileFormat",
+      "default_value" : "csv",
+      "label" : "File format",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 1,
+      "multiline" : false,
+      "name" : "file_format",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The name of the file to write to or delete",
+      "displayGroup" : "generalTarget",
+      "label" : "File name",
+      "type" : "string",
+      "required" : true,
+      "tags" : [ "file" ],
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 85,
+      "multiline" : false,
+      "name" : "file_name",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Indicates whether the row where reading starts is the header",
+      "displayGroup" : "fileFormat",
+      "default_value" : "false",
+      "label" : "First line is header",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 35,
+      "multiline" : false,
+      "name" : "first_line_header",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Include data types in the first line of the file",
+      "displayGroup" : "fileFormat",
+      "default_value" : "false",
+      "label" : "Include types",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 50,
+      "multiline" : false,
+      "name" : "include_types",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Set column labels to the value of the column name",
+      "displayGroup" : "fileFormat",
+      "label" : "Names as labels",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 610,
+      "multiline" : false,
+      "name" : "names_as_labels",
+      "multichoice" : false,
+      "group" : "sav"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The value that represents null (a missing value) in the file, for example, NULL",
+      "displayGroup" : "dataFormats",
+      "label" : "Null value",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 450,
+      "multiline" : false,
+      "name" : "null_value",
+      "multichoice" : false,
+      "placeholder" : "NULL",
+      "group" : "delimited"
+    }, {
+      "hidden" : true,
+      "masked" : false,
+      "description" : "The prefix in each partition name",
+      "displayGroup" : "generalTarget",
+      "default_value" : "part",
+      "label" : "Partition name prefix",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 310,
+      "multiline" : false,
+      "name" : "partition_name_prefix",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Write the file as multiple partitions",
+      "displayGroup" : "generalTarget",
+      "default_value" : "false",
+      "label" : "Partitioned",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 300,
+      "multiline" : false,
+      "name" : "partitioned",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Double quotation mark",
+        "value" : "double_quote"
+      }, {
+        "label" : "None",
+        "value" : "none"
+      }, {
+        "label" : "Single quotation mark",
+        "value" : "single_quote"
+      } ],
+      "description" : "The character that's used to enclose string values, for example, a double quotation mark",
+      "displayGroup" : "fileFormat",
+      "default_value" : "none",
+      "label" : "Quote character",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 350,
+      "multiline" : false,
+      "name" : "quote_character",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "Enclose numeric values the same as strings using the quote character",
+      "displayGroup" : "fileFormat",
+      "default_value" : "true",
+      "label" : "Quote numeric values",
+      "type" : "boolean",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 10,
+      "multiline" : false,
+      "name" : "quote_numerics",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Any new line",
+        "value" : "new_line"
+      }, {
+        "label" : "Carriage return",
+        "value" : "carriage_return"
+      }, {
+        "label" : "Carriage return & line feed",
+        "value" : "carriage_return_line_feed"
+      }, {
+        "label" : "Line feed",
+        "value" : "line_feed"
+      } ],
+      "description" : "The character or characters that separate one line from another, for example, CR/LF (Carriage Return/Line Feed)",
+      "displayGroup" : "fileFormat",
+      "default_value" : "new_line",
+      "label" : "Row delimiter",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 315,
+      "multiline" : false,
+      "name" : "row_delimiter",
+      "multichoice" : false,
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The name of the Excel worksheet to write to",
+      "displayGroup" : "generalTarget",
+      "label" : "Worksheet name",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 86,
+      "multiline" : false,
+      "name" : "sheet_name",
+      "multichoice" : false,
+      "group" : "general"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The format of time values, for example, HH:mm:ss[.f]",
+      "displayGroup" : "dataFormats",
+      "label" : "Time format",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 420,
+      "multiline" : false,
+      "name" : "time_format",
+      "multichoice" : false,
+      "placeholder" : "HH:mm:ss[.f]",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "description" : "The format of timestamp values, for example, yyyy-MM-dd H:m:s",
+      "displayGroup" : "dataFormats",
+      "label" : "Timestamp format",
+      "type" : "string",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 430,
+      "multiline" : false,
+      "name" : "timestamp_format",
+      "multichoice" : false,
+      "placeholder" : "yyyy-MM-dd H:m:s",
+      "group" : "delimited"
+    }, {
+      "hidden" : false,
+      "masked" : false,
+      "values" : [ {
+        "label" : "Delete",
+        "value" : "delete",
+        "supported_products" : [ "catalog", "cpd", "datastage", "datastage_scapi", "ml", "studio" ]
+      }, {
+        "label" : "Write",
+        "value" : "write"
+      }, {
+        "label" : "Write binary data",
+        "value" : "write_raw",
+        "supported_products" : [ "catalog", "cpd", "datastage", "datastage_scapi", "ml", "studio" ]
+      } ],
+      "description" : "Whether to write to, or delete, the target",
+      "displayGroup" : "generalTarget",
+      "default_value" : "write",
+      "label" : "Write mode",
+      "type" : "enum",
+      "required" : false,
+      "user_defined" : false,
+      "readonly" : false,
+      "uiOnly" : false,
+      "displayOrdinal" : 1,
+      "multiline" : false,
+      "name" : "write_mode",
+      "multichoice" : false,
+      "group" : "general"
+    } ]
+  },
+  "datasource_type" : "507b850c-f4a1-41d7-ad64-4182a1264014",
+  "name" : "ABN-australia",
+  "flags" : [ "personal_credentials" ],
+  "rov" : {
+    "mode" : 0
+  },
+  "description" : "ABN Australia",
+  "properties" : {
+    "access_token" : "sl.BhAMJmyQ1MLdtl1VSabrS-WjacuhvkT4zK3xR4eK4iZjnPjUH_O1QSgQSJHNolsX91SVvwcsoQcPET9EDCRYOzxsBtRPhZoSyj9p44OJ6UTdMdbp-VK9SJB2m2kqtqHd0YVGjZ8Op82X"
+  },
+  "origin_country" : "us"
+}

@@ -1,0 +1,292 @@
+{
+  "primary_pipeline" : "7ed3227b-44e4-4524-896c-77338321e76a",
+  "pipelines" : [ {
+    "nodes" : [ {
+      "outputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : 2
+            }
+          }
+        },
+        "parameters" : { }
+      } ],
+      "op" : "PxFileSet",
+      "inputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "inPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : 1
+            }
+          }
+        }
+      } ],
+      "id" : "1b4b5e72-afbb-4bea-8082-51b74f18b329",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxFileSet.svg",
+          "x_pos" : 190.08,
+          "label" : "import_file",
+          "y_pos" : 213.84
+        }
+      },
+      "parameters" : {
+        "combinability" : "auto",
+        "output_count" : 0,
+        "nls_map_name" : "UTF-8",
+        "input_count" : 0,
+        "execmode" : "default_par",
+        "allow_column_mapping" : false
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 1,
+              "max" : 2
+            }
+          }
+        }
+      } ],
+      "op" : "PxColumnExport",
+      "inputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "inPort",
+            "cardinality" : {
+              "min" : 1,
+              "max" : 1
+            }
+          }
+        },
+        "parameters" : {
+          "schema" : [ ],
+          "final_delim" : "end",
+          "null_field_sep_flag" : false,
+          "numericOption" : [ ],
+          "type" : "raw",
+          "recLevelOption" : [ "final_delimiter" ],
+          "quote" : "double",
+          "fieldOption" : [ "delimiter", "quote", "null_field" ],
+          "keepExportedFields" : " ",
+          "output_count" : 0,
+          "generalOption" : [ ],
+          "timestampOption" : "none",
+          "input_count" : 0,
+          "additionalPropertiesSet" : [ ],
+          "outputcolProperties" : [ ],
+          "delim" : "','",
+          "timeOption" : "none",
+          "stringOption" : [ ],
+          "null_field" : "NULL",
+          "dateOption" : "none",
+          "part_type" : "auto",
+          "combinability" : "auto",
+          "inputcolProperties" : [ ],
+          "selection" : "explicit",
+          "execmode" : "default_par",
+          "saveRejects" : " ",
+          "decimalOption" : [ ]
+        }
+      } ],
+      "id" : "7c97a7c8-81f1-423f-8e34-29158aedff87",
+      "type" : "execution_node",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxColumnExport.svg",
+          "x_pos" : 403.92,
+          "label" : "Column_Export_1",
+          "y_pos" : 213.84
+        }
+      },
+      "parameters" : {
+        "schema" : [ ],
+        "final_delim" : "end",
+        "null_field_sep_flag" : false,
+        "null_field" : "NULL",
+        "part_type" : "auto",
+        "type" : "raw",
+        "combinability" : "auto",
+        "quote" : "double",
+        "selection" : "explicit",
+        "keepExportedFields" : " ",
+        "output_count" : 0,
+        "execmode" : "default_par",
+        "input_count" : 0,
+        "saveRejects" : " ",
+        "delim" : "','"
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : { }
+          }
+        }
+      } ],
+      "op" : "dropbox",
+      "inputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "inPort",
+            "cardinality" : { }
+          }
+        },
+        "parameters" : {
+          "part_coll" : "part_type"
+        }
+      } ],
+      "connection" : {
+        "ref" : "local",
+        "properties" : {
+          "row_delimiter" : "new_line",
+          "partition_name_prefix" : "part",
+          "quote_numerics" : true,
+          "buf_mode" : "default",
+          "buf_free_run" : 50,
+          "partitioned" : false,
+          "include_types" : false,
+          "enableSchemalessDesign" : false,
+          "first_line_header" : false,
+          "disk_write_inc" : 1048576,
+          "encoding" : "utf-8",
+          "field_delimiter" : "comma",
+          "write_mode" : "write",
+          "node_number" : 0,
+          "queue_upper_size" : 0,
+          "browseLocalConnection" : "771a5a4c-6b2b-4667-a152-e0a9f6896318",
+          "max_mem_buf_size" : 3145728,
+          "quote_character" : "none",
+          "node_count" : 1,
+          "escape_character" : "none",
+          "defer_credentials" : false,
+          "file_format" : "csv"
+        }
+      },
+      "id" : "771a5a4c-6b2b-4667-a152-e0a9f6896318",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/dropbox.svg",
+          "x_pos" : -95.04,
+          "label" : "Dropbox_1",
+          "y_pos" : 498.96000000000004
+        }
+      },
+      "parameters" : {
+        "combinability" : "auto",
+        "output_count" : 0,
+        "input_count" : 0,
+        "execmode" : "default_par",
+        "outputcolProperties" : [ ],
+        "preserve" : -3
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : { }
+          }
+        }
+      } ],
+      "op" : "dropbox",
+      "inputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "inPort",
+            "cardinality" : { }
+          }
+        },
+        "parameters" : {
+          "part_coll" : "part_type"
+        }
+      } ],
+      "connection" : {
+        "ref" : "d85640e2-5529-4dcf-8ac5-b9f5aff59cc9",
+        "project_ref" : "537ef1ae-cc1b-4e8f-8e95-84ca527b658b",
+        "properties" : {
+          "write_mode" : "write",
+          "node_number" : 0,
+          "partition_name_prefix" : "part",
+          "quote_numerics" : true,
+          "buf_mode" : "default",
+          "showDataVisualization" : true,
+          "partitioned" : false,
+          "enableSchemalessDesign" : false,
+          "first_line_header" : false,
+          "node_count" : 1,
+          "encoding" : "utf-8",
+          "file_format" : "csv"
+        },
+        "name" : "ABN-australia"
+      },
+      "id" : "82120276-5359-417d-822c-120b91ad020a",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/dropbox.svg",
+          "description" : "",
+          "x_pos" : 0,
+          "label" : "Dropbox_2",
+          "y_pos" : 23.76
+        }
+      },
+      "parameters" : {
+        "combinability" : "auto",
+        "output_count" : 0,
+        "input_count" : 0,
+        "execmode" : "default_par",
+        "outputcolProperties" : [ ]
+      }
+    } ],
+    "id" : "7ed3227b-44e4-4524-896c-77338321e76a",
+    "app_data" : {
+      "ui_data" : {
+        "comments" : [ ]
+      }
+    },
+    "runtime_ref" : "pxOsh"
+  } ],
+  "external_paramsets" : [ ],
+  "json_schema" : "https://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "schemas" : [ ],
+  "doc_type" : "pipeline",
+  "id" : "fedd7a32-f365-4993-bc18-9a601f8111f9",
+  "app_data" : {
+    "datastage" : {
+      "message_handlers" : [ ],
+      "version" : "3.0.5"
+    },
+    "additionalProperties" : {
+      "transInputLinkMapper" : { },
+      "rcpLinkList" : [ ],
+      "enableRCP" : false,
+      "enableSchemaLessDesign" : false,
+      "showLinkmarkings" : true,
+      "showRuntimeMetrics" : true,
+      "showComments" : true
+    }
+  },
+  "version" : "3.0",
+  "parameters" : {
+    "local_parameters" : [ ]
+  }
+}

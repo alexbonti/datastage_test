@@ -1,0 +1,37 @@
+{
+  "project_name" : "Alessio Test DS",
+  "project_id" : "537ef1ae-cc1b-4e8f-8e95-84ca527b658b",
+  "created_by" : "admin",
+  "created_at" : "2023-07-11T03:14:11.433894Z",
+  "environment" : "cp4d",
+  "services_info" : [ {
+    "name" : "ds-canvas",
+    "version" : "463.0.10"
+  }, {
+    "name" : "ds-flows",
+    "version" : "463.0.2"
+  }, {
+    "name" : "ds-codegen",
+    "version" : "463.0.9"
+  }, {
+    "name" : "ds-flow-runtime",
+    "version" : "463.0.6"
+  }, {
+    "name" : "ds-migration",
+    "version" : "463.0.6"
+  }, {
+    "name" : "DSAssets",
+    "version" : "463.0.2"
+  }, {
+    "name" : "ds-cas-lite",
+    "version" : "463.0.2"
+  } ],
+  "assets" : [ {
+    "name" : "Testing ETL Capabilities",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "ABN-australia",
+    "type" : "connection"
+  } ],
+  "flow_job_mapping" : [ ]
+}
